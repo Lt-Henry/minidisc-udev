@@ -1,0 +1,54 @@
+
+#Sony PCLK-XX
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0034", GOTO="minidisc"
+
+#Sony Unknown
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0036", GOTO="minidisc"
+
+#Sony MZ-N1
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0075", GOTO="minidisc"
+
+#Sony Unknown
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="007C", GOTO="minidisc"
+
+#Sony LAM-1
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0080", GOTO="minidisc"
+
+#Sony MDS-JE780/JB980
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0081", GOTO="minidisc"
+
+#Sony MZ-N505
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0084", GOTO="minidisc"
+
+#Sony MZ-S1
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0085", GOTO="minidisc"
+
+#Sony MZ-N707
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0086", GOTO="minidisc"
+
+#Sony CMT-C7NT
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="008E", GOTO="minidisc"
+
+#Sony PCGA-MDN1
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0097", GOTO="minidisc"
+
+#Sony MZ-N10
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="00C6", GOTO="minidisc"
+
+#Sony MZ-N910
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="00C7", GOTO="minidisc"
+
+#Sony MZ-N710/NE810/NF810
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="00C8", GOTO="minidisc"
+
+#Sony MZ-N510/NF610
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="00C9", GOTO="minidisc"
+
+#Sony MZ-NE410/DN430/NF520
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="00CA", GOTO="minidisc"
+
+#Sony MZ-NH600/600D
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0186", GOTO="minidisc"
+
+LABEL="minidisc"
+MODE="0666" SYMLINK+="minidisc%k"
