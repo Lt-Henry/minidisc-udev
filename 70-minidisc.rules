@@ -47,8 +47,71 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="00C9", GOTO="minid
 #Sony MZ-NE410/DN430/NF520
 SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="00CA", GOTO="minidisc"
 
+#Sony MZ-NE810/NE910
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="00EB", GOTO="minidisc"
+
+#Sony CMT-M333NT/M373NT
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="00E7", GOTO="minidisc"
+
+#Sony LAM-10
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0101", GOTO="minidisc"
+
+#Aiwa AM-NX1
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0113", GOTO="minidisc"
+
+#Aiwa AM-NX9
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="014C", GOTO="minidisc"
+
+#Sony MZ-NH1
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="017E", GOTO="minidisc"
+
+#Sony MZ-NH3D
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0180", GOTO="minidisc"
+
+#Sony MZ-NH900
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0182", GOTO="minidisc"
+
+#Sony MZ-NH700/800
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0184", GOTO="minidisc"
+
 #Sony MZ-NH600/600D
 SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0186", GOTO="minidisc"
+
+#Sony MZ-N920
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0188", GOTO="minidisc"
+
+#Sony LAM-3
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="018A", GOTO="minidisc"
+
+#Sony MZ-DH10P
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="01E9", GOTO="minidisc"
+
+#Sony MZ-RH10
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0219", GOTO="minidisc"
+
+#Sony MZ-RH910/M10
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="021B", GOTO="minidisc"
+
+#Sony CMT-AH10
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="021D", GOTO="minidisc"
+
+#Sony CMT-AH10
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="022C", GOTO="minidisc"
+
+#Sony DS-HMD1
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="023C", GOTO="minidisc"
+
+#Sony MZ-RH1
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054C", ATTRS{idProduct}=="0286", GOTO="minidisc"
+
+#Sharp IM-MT880H/MT899H
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04DD", ATTRS{idProduct}=="7202", GOTO="minidisc"
+
+#Sharp IM-DR400/DR410
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04DD", ATTRS{idProduct}=="9013", GOTO="minidisc"
+
+#Sharp IM-DR80/DR420/DR580 and Kenwood DMC-S9NET
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04DD", ATTRS{idProduct}=="9014", GOTO="minidisc"
 
 LABEL="minidisc"
 MODE="0666" SYMLINK+="minidisc%k"
